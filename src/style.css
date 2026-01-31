@@ -85,10 +85,62 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
+  }
+}
+
+.game {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.game-title {
+  margin: 0 0 24px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.player-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  background: #1b1b1b;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.player-card h2 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+}
+
+.player-card .status {
+  margin-top: 16px;
+  opacity: 0.8;
+}
+
+/* Mobile stacking */
+@media (max-width: 700px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .player-card {
+    width: 100%;
+    max-width: 420px;
   }
 }

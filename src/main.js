@@ -8,5 +8,3 @@ document.querySelector('#app').innerHTML = `
     <h1>Play Fun Games With Friends!</h1>
   </div>
 `
-
-setupCounter(document.querySelector('#counter'))
